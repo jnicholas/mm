@@ -1,11 +1,13 @@
 source 'http://rubygems.org'
 
-gem 'rails', '3.0.6'
+gem 'rails', '3.0.9'
+gem 'mongrel', '>= 1.2.0.pre2'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
-gem 'sqlite3'
+# gem 'sqlite3'
+gem 'mysql2', '<= 0.2.6'
 
 # Use unicorn as the web server
 # gem 'unicorn'
@@ -21,7 +23,7 @@ gem 'sqlite3'
 # gem 'bj'
 # gem 'nokogiri'
 # gem 'sqlite3-ruby', :require => 'sqlite3'
-gem 'aws-s3', :require => 'aws/s3'
+# gem 'aws-s3', :require => 'aws/s3'
 
 # Bundle gems for the local environment. Make sure to
 # put test-only gems in this group so their generators
@@ -33,12 +35,12 @@ gem 'aws-s3', :require => 'aws/s3'
 # REFINERY CMS ================================================================
 # Anything you put in here will be overridden when the app gets updated.
 
-gem 'refinerycms',              '= 0.9.9.16'
+gem 'refinerycms',              '= 1.0.3'
 
 group :development, :test do
   # To use refinerycms-testing, uncomment it (if it's commented out) and run 'bundle install'
   # Then, run 'rails generate refinerycms_testing' which will copy its support files.
-  # gem 'refinerycms-testing',    '~> 0.9.9.16'
+  # gem 'refinerycms-testing',    '~> 1.0.3'
 end
 
 # END REFINERY CMS ============================================================

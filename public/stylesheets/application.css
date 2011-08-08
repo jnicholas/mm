@@ -2,3 +2,31 @@
   Override default refinery application CSS below.
   Formatting applies to all frontend.
 */
+body {
+    width: 940px;
+    margin-left: auto;
+    margin-right: auto;
+    background: #212121;
+    color : #fff;
+    /*font-family:'Museo-Sans-1,'Aller',Tahoma,sans-serif;*/
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+header {
+    width: 940px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+}
+
+a { color: #fff; }
+
+/* Site Logo */
+#logo a {
+    float: left;
+    text-decoration: none;   
+}
+
+/* Site Navigation */
+header nav {    
+}
