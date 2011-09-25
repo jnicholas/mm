@@ -2,71 +2,8 @@
 <% content_for :head_libraries, jquery_include_tags(:jquery_ui => false) %>
 <% content_for :head, javascript_include_tag('application') %>
 <% content_for :head, javascript_include_tag('jquery.cycle') %>
-<!-- Logo -->
-<style type="text/css">
-  #logo {
-      float: left;
-      padding-top: 37px;
-      width: 200px;
-  }
-
-  #body_content {
-      margin: 25px 0;
-  }
-</style>
-<div id="logo">
-  <a href="/">
-    METROPOLITAN MUSIC
-  </a>
-</div>
-<!-- Default Navigation -->
-<style type="text/css">
-
-  #nav_content {
-      border-bottom: 1px solid #BBBABA;
-  }
-  #nav {
-      float: right;
-      padding-top: 71px;
-      width: 500px;
-  }
-
-  .nav-link {
-      margin-left: 0px;
-      margin-right: 15px;
-      color: #818181;
-      font-size: 100%;
-      line-height: 16.8px;
-      height: 50px;
-      padding-left: 15px;
-      text-decoration: none;
-  }
-
-  .nav-link:hover {
-      /*background-image: url("/images/nav_note.gif");*/
-      background-repeat: no-repeat;
-      background-position: -18px;
-      padding-top: 12px;
-      padding-bottom: 12px;
-      cursor:pointer;
-      color: white;
-  }
-</style>
-<div id="nav">
-  <a class="nav-link ">home.</a>
-  <a class="nav-link " href="/rentals">rentals.</a>
-  <a class="nav-link " href="/lessons">lessons.</a>
-  <a class="nav-link " href="/about">about.</a>
-  <a class="nav-link " href="/contact">contact us.</a>
-</div>
-<section id='nav_content'>
-  <%=raw @page[:nav] %>
-</section>
 <section id='body_content'>
   <style type="text/css">
-
-    .slogan {
-    }
 
     .content_left {
         border: 2px solid #818181;
@@ -74,27 +11,11 @@
         float: left;
     }
 
-    .pics img {
-        width: 400px;
-        height: 233px;
-    }
-
     .content_right {
         float : right;
         width : 480px;
     }
   </style>
-
-  <div class="slogan">
-    <h1>The Future of Music</h1>
-  </div>
-  <div class="content_left">
-    <div id="s1" class="pics">
-      <img src="/images/richard-dorian-2.jpg"/>
-      <img src="/images/bbr.jpg"/>
-      <img src="/images/Lyle-guitar.jpg"/>
-    </div>
-  </div>
   <div class="content_right">
     <%=raw @page[:body] %>
   </div>

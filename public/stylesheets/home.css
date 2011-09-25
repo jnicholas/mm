@@ -2,35 +2,3 @@
   Override default refinery homepage styles here.
   These only apply to the homepage of your site.
 */
-#page {
-    width: 1000px;
-}
-
-#page_container header {
-	display: none;
-}
-
-#page_container footer p {
-    text-align: center;
-    font-size: 12px;
-}
-
-p.improved {
-    padding-top: 45px;
-}
-
-img {
-    display: block;
-    width  : 80%;
-    height : 80%;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-table.info-table {
-    width: 100%;
-}
-
-table.info-table td {
-    text-align: center;
-}
