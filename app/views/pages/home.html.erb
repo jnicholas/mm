@@ -1,29 +1,31 @@
 <!-- render :partial => "/shared/content_page" -->
-<% content_for :head_libraries, jquery_include_tags(:jquery_ui => false) %>
-<% content_for :head, javascript_include_tag('application') %>
-<% content_for :head, javascript_include_tag('jquery.cycle') %>
-<section id='body_content'>
   <style type="text/css">
 
-    .content_left {
-        border: 2px solid #818181;
-        width: 400px;
+    #body_content
+    {
+        margin-top: 20px;
+    }
+
+    .content_left
+    {
+        width: 600px;
         float: left;
     }
 
-    .content_right {
-        float : right;
-        width : 480px;
+    .content_right
+    {
+        float : left;
+        width : 320px;
     }
   </style>
-  <div class="content_right">
+<section id='body_content'>
+  <div class="content_left">
     <%=raw @page[:body] %>
   </div>
+  <div class="content_right">
+    <%=raw @page[:side_body] %>
+  </div>
 </section>
-<!--<section id="site_info">-->
-  <!--<%=raw @page[:side_body] %>-->
-<!--</section>-->
-
 <style type="text/css">
 
     #site_info_content {
@@ -53,14 +55,21 @@
 
   function init() {
 
+      var panel = $('#s1');
+
       // Image cycling
-      $('#s1').cycle({
-          fx    : 'fade',
-          pause : 1
-      });
+      if (panel)
+      {
+          panel.cycle({
+              fx    : 'fade',
+              fit   : 1,
+              height: '378px',
+              width : '600px',
+              pause : 1
+          });
+      }
 
   }
 
-  init();
-
+  $(document).ready(init);
 </script>
