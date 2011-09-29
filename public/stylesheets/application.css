@@ -6,9 +6,9 @@ body {
     width: 940px;
     margin-left: auto;
     margin-right: auto;
-    background: #212121;
+    background: #000;
     color : #fff;
-    font-family: Helvetica, Arial, sans-serif;
+    font-family: Calibri; /*Helvetica, Arial, sans-serif;*/
 }
 
 .header {
@@ -17,7 +17,7 @@ body {
     margin-left: auto;
     margin-right: auto;
     position: relative;
-    border-bottom: 1px solid #fff;
+    border-bottom: 1px solid #D7D5CA;
 }
 
 a { color: #fff; }
@@ -36,19 +36,19 @@ a { color: #fff; }
 #logo a {
     float: left;
     text-decoration: none;
-    font-size: 16px;
+    /*font-size: 16px;*/
     text-transform: uppercase;
     font-weight: normal;
-    margin-top: 45px;
+    margin-top: 33px;
     margin-left: 10px;
 }
 
 /* Site Navigation */
 #nav_content nav {
     float: right;
-    padding-top: 71px;
-    width: 500px;
-    margin-top: 20px;
+    /*padding-top: 75px;*/
+    /*width: 640px;*/
+    margin-top: 35px;
 }
 
 #nav_content nav a
@@ -56,15 +56,31 @@ a { color: #fff; }
     margin-left: 0;
     margin-right: 15px;
     color: #818181;
-    font-size: 100%;
+    font-size: 16px;
     line-height: 16.8px;
     height: 50px;
     padding-left: 15px;
     text-decoration: none;
-    text-transform:lowercase;
+    text-transform: lowercase;
+}
+
+#nav_content nav a:hover
+{
+    color : white;
+}
+
+.menu li
+{
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
 }
 
 .menu li.selected > a
 {
     color: white !important;
+}
+
+.menu li:hover
+{
+    background-color: #6F0E0E;
 }
